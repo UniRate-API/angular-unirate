@@ -1,0 +1,56 @@
+{
+  "name": "@unirate/angular",
+  "version": "0.1.0",
+  "description": "Official Angular module for the UniRate currency-exchange API. UniRateModule.forRoot, provideUniRate, injectable UniRateService (Observable-based), and currencyRate / currencyConvert pipes. Zero runtime deps.",
+  "license": "MIT",
+  "author": "UniRate (https://unirateapi.com)",
+  "homepage": "https://github.com/UniRate-API/angular-unirate#readme",
+  "bugs": "https://github.com/UniRate-API/angular-unirate/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniRate-API/angular-unirate.git"
+  },
+  "keywords": [
+    "angular",
+    "angular-module",
+    "unirate",
+    "currency",
+    "currency-converter",
+    "exchange-rates",
+    "forex",
+    "fx",
+    "money",
+    "fintech"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0",
+    "@angular/core": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0",
+    "rxjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^22.0.5",
+    "@angular/compiler": "^22.0.5",
+    "@angular/compiler-cli": "^22.0.5",
+    "@angular/core": "^22.0.5",
+    "@types/node": "^20.11.0",
+    "ng-packagr": "^22.0.1",
+    "rxjs": "^7.8.0",
+    "tslib": "^2.6.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7"
+  },
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
